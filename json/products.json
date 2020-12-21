@@ -1,0 +1,74 @@
+[
+    {
+        "id" : "1",
+        "category" : "laptop",
+        "catid" : "1",
+        "name" : "Lenovo",
+        "description" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image" : "../images/laptop.png"
+    },
+    {
+        "id" : "2",
+        "category" : "laptop",
+        "catid" : "1",
+        "name" : "Sony",
+        "description" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image" : "../images/laptop.png"
+    },
+    {
+        "id" : "3",
+        "category" : "laptop",
+        "catid" : "1",
+        "name" : "HP",
+        "description" : "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image" : "../images/laptop.png"
+    },
+    {
+        "id" : "4",
+        "category" : "Mobiles",
+        "catid" : "2",
+        "name" : "Samsung",
+        "description" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image" : "../images/mobile.png"
+    },
+    {
+        "id" : "5",
+        "category" : "Mobiles",
+        "catid" : "2",
+        "name" : "Oppo",
+        "description" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image" : "../images/mobile.png"
+    },
+    {
+        "id" : "6",
+        "category" : "Mobiles",
+        "catid" : "2",
+        "name" : "HP",
+        "description" : "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image" : "../images/mobile.png"
+    },
+    {
+        "id" : "7",
+        "category" : "TV",
+        "catid" : "3",
+        "name" : "LG",
+        "description" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image" : "../images/tv.png"
+    },
+    {
+        "id" : "8",
+        "category" : "TV",
+        "catid" : "3",
+        "name" : "panasonic",
+        "description" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "image" : "../images/tv.png"
+    },
+    {
+        "id" : "9",
+        "category" : "TV",
+        "catid" : "3",
+        "name" : "Sharp",
+        "description" : "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "image" : "../images/tv.png"
+    }
+]

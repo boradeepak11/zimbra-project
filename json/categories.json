@@ -1,0 +1,19 @@
+[
+    {
+        "id" : "0",
+        "name" : "Select"
+    },
+    {
+        "id" : "1",
+        "name" : "laptop"
+    },
+    {
+        "id" : "2",
+        "name" : "Mobiles"
+    },
+    {
+        "id" : "3",
+        "name" : "TV"
+    }
+
+]

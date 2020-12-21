@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Product Selection </title>
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <style type="text/css">
+       #products li {display: inline-block; margin-right: 20px; margin-bottom: 20px; border:1px solid #ccc; padding: 20px; background-color: #ededed; }
+       #products li img {width: 150px; height: 150px}
+       #products li .head { font-size: 16px}
+       #products li .div { font-size: 16px}
+    </style>
+</head>
+<body>
+
+    <div style="width:50%; margin-left: auto ;margin-right: auto; padding: 20px">
+        <form name="" method="" action="">
+            <h3>Product Selection </h3>
+        </form>
+        <p>
+            <div style="background-color:#eee; padding: 20px 10px;"> 
+                <select id="prodcat">
+                </select> 
+                <br/><br/>
+                <ul id="products">
+                </ul> 
+            </div>
+        </p>    
+    </div>    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function()
+        {
+            $(function()
+            {
+                var productlist="";
+                var catid;
+                var catgy="";
+                
+                $.getJSON('json/categories.json', function(data)
+                {
+                   
+                    $(data).each(function(indx,value)
+                    {
+                        catgy += "<option value='" + value.id + "'>" + value.name + "</option>";
+                    });
+                    ($("#prodcat").html(catgy));
+                });  
+                $.getJSON('json/products.json', function(result)
+                {
+                  $(result).each(function(idx,product)
+                  {
+                    productlist +="<li onclick=redirect('" + product.id + "') id='" + product.catid + "' class='emps'>" + '<img src="images/'+product.image+'"/>' + '<h3>' + product.name + '</h3>'
+                                 "</li>"; 
+                  });
+                  $("#products").html(productlist);
+                });
+                $("#prodcat").change(function()
+                  {
+                     var id=$(this).val();
+                     $("#products li.emps").show()
+                     $("#products li:not(" + '#' + id + ")").hide();
+                     if(id==0)
+                     {
+                        $("#products").html(productlist);
+                     } 
+                  })
+            });
+        }); 
+          
+        function redirect(productid)
+        {
+            window.location.href="products-details.html?productid="+productid;
+        }
+
+    </script>
+
+</body>
+</html>
